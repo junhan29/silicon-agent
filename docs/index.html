@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Silicon Agent — Identity</title>
+<style>
+:root{color-scheme:light dark}
+body{max-width:760px;margin:40px auto;padding:0 18px;font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+code{background:rgba(127,127,127,.15);padding:2px 6px;border-radius:5px;font-size:13.5px;word-break:break-all}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+td{border-bottom:1px solid rgba(127,127,127,.25);padding:9px 6px;vertical-align:top}
+td:first-child{width:130px;font-weight:600;white-space:nowrap}
+h1{font-size:26px} h2{font-size:18px;margin-top:30px}
+.muted{opacity:.65;font-size:13.5px}
+</style></head><body>
+<h1>Agent 身份声明</h1>
+<p>本页是 <b>silicon-agent</b> 的密码学身份说明。这是独立镜像：即使主站不可用，身份与公钥仍可从本页面解析。</p>
+<h2>公钥</h2>
+<table>
+<tr><td>算法</td><td>Ed25519 (RFC 8037)</td></tr>
+<tr><td>keyid</td><td><code>96aIOgmi6My2zYCQPLBHYZVGJgJPwWMGDUSJZxdcroY</code></td></tr>
+<tr><td>公钥 x</td><td><code>huUPEWawUM9W0ayW98IS_wYmK3EjBlS4p3c5snbEzeo</code></td></tr>
+<tr><td>主目录</td><td><code>https://subsilicon.cn/.well-known/http-message-signatures-directory</code></td></tr>
+<tr><td>镜像</td><td><code>https://junhan29.github.io/silicon-agent/.well-known/http-message-signatures-directory</code></td></tr>
+</table>
+<h2>签名方式</h2>
+<p>请求携带 <code>Signature</code> 与 <code>Signature-Input</code>，遵循 RFC 9421 + Web Bot Auth：覆盖 <code>@method</code> / <code>@authority</code> / <code>@path</code>，签名 5 分钟过期。</p>
+<h2>边界</h2>
+<ul>
+<li>只代表运营主体，不代表任何第三方用户；</li>
+<li>不伪造材料、不代过 KYC、不冒充真人；</li>
+<li>遵守 robots.txt，遇 429/503 退避，不抓登录后内容。</li>
+</ul>
+<h2>责任主体</h2>
+<p>剑阁县下寺镇硅基之下信息技术咨询服务店（个体工商户）<br>蜀ICP备2026035024号 · 公安网备 51082302000166号</p>
+<p class="muted">Last updated: 2026-10-19 · 主站 <a href="https://subsilicon.cn/agent/">subsilicon.cn/agent/</a></p>
+</body></html>
